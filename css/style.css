@@ -5,7 +5,7 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito|Roboto+Mono');
 
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 body,
@@ -15,13 +15,13 @@ button {
 }
 
 body {
-  font: 1em/1.5;
-  color: rgba(6, 49, 68, 0.9);
-	background: #e6f0f5;
+	font: 1em/1.5;
+	color: rgba(6, 49, 68, 0.9);
+	background: #CDE0FB;
 }
 
 header {
-	text-align: center;  
+	text-align: center;
 }
 
 h1 {
@@ -31,18 +31,18 @@ h1 {
 }
 
 a {
-  text-decoration: none;
+	text-decoration: none;
 }
 
-/* ================================= 
+/* =================================
   Form Element Styles
 ==================================== */
 
 form {
 	padding: .875em 1.875em 1.875em;
-	background: #9bdcf8;
+	background: #9BBEEF;
 	border: 2px solid rgba(8, 63, 87, 0.7);
-	border-radius: 4px;
+	border-radius: 3px;
 }
 
 fieldset,
@@ -58,11 +58,11 @@ fieldset {
 
 legend,
 button {
-	font-size: 1.25em;	
+	font-size: 1.25em;
 }
 
 legend {
-	font-weight: 500;
+	font-weight: bold;
 	padding-top: .5em;
 	border-top: 2px solid rgba(8, 63, 87, 0.6);
 	margin-bottom: 1.125em;
@@ -82,7 +82,7 @@ label {
 
 input,
 select {
-	margin-bottom: 1.125em;	
+	margin-bottom: 1.125em;
 }
 
 input {
@@ -90,8 +90,8 @@ input {
 	font-weight: 500;
 	padding: .8em;
 	background: #e9f6fb;
-	border: 2px solid #b0d3e2;
-	border-radius: 4px;
+	border: 2px solid #6F9DDC;
+	border-radius: 3px;
 	outline: none;
 }
 
@@ -118,19 +118,45 @@ button {
 }
 
 button:hover {
-	background: #0887bd;
-	border: 2px solid #f4f6f6;
+	background: #6F9DDC;
 }
 
-input, 
-select, 
+input,
+select,
 option {
 	font-family: 'roboto', sans-serif;
 }
 
-/* ================================= 
-  Page Styles
-==================================== */
+.activities div {
+	background-color: darkgrey;
+	border-radius: 500px;
+	display: inline-flex;
+	padding: 5px;
+	margin: 0px 0px 50px 100px;
+}
+
+.total-cost {
+	float: left;
+}
+
+.message, .activity-message,
+.cc-message, .cc-empty-message{
+	display: flex;
+	clear: right;
+	float: left;
+	color: crimson;
+}
+
+.mail {
+	display: flex;
+	clear: right;
+	float: right;
+	color: crimson;
+}
+
+/* =================================
+      Page Styles
+    ==================================== */
 
 .container {
 	margin: auto;
@@ -150,7 +176,13 @@ option {
 	margin-top: 1.25em;
 }
 
-/* ================================= 
+#other-title {
+	min-width: 300px;
+	min-height: 125px;
+	max-width: 615px;
+}
+
+/* =================================
   Helper Classes
 ==================================== */
 
@@ -159,12 +191,12 @@ option {
 }
 
 .clearfix::after {
-  content: " ";
-  display: table;
-  clear: both;
+	content: " ";
+	display: table;
+	clear: both;
 }
 
-/* ================================= 
+/* =================================
   Media Queries
 ==================================== */
 
