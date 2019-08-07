@@ -33,22 +33,22 @@ $('#colors-js-puns').hide('colors-js-puns');
 // Only displays the color options that match the theme selected
 // When a new theme is selected the color field and drop down menu update
 $('#design').change(function() {
-  let $str = $(this).find("option:selected").text();
+  let $str = $('#design').find("option:selected").text();
+  console.log($('color').val());
   if(($str.indexOf("Puns")) > 0) {
     $('#color').empty()
-        .append(cornFlowerBlue)
         .append(darkSlateGrey)
         .append(gold)
-        .append('<option value="Please_select" selected="selected">Please select a T-shirt theme...</option>');
+        .append(cornFlowerBlue)
+        .append('<option value="Please_select">Please select a T-shirt theme...</option>');
     $('#colors-js-puns').fadeIn('colors-js-puns');
   }
   else if(($str.indexOf("I")) > 0){
     $('#color').empty()
-        .append(tomato)
         .append(steelBlue)
         .append(dimGrey)
-        .append('<option value="Please_select" selected="selected">Please select a T-shirt theme...</option>');
-    $('#colors-js-puns').fadeIn('colors-js-puns');
+        .append(tomato)
+        .append('<option value="Please_select">Please select a T-shirt theme...</option>');
   }
   if(($str.indexOf("Select")) >= 0) {
     $('#colors-js-puns').fadeOut('colors-js-puns');
@@ -303,6 +303,9 @@ $('button').click(function(e){
     alert('form validation was completed successfully');
     $('form').submit();
   } else if (($('#payment').val() === 'paypal') && (totalValid === true) && (nameValid === true) && (emailValid === true)){
+    alert('form validation was completed successfully');
+    $('form').submit();
+  } else if (($('#payment').val() === 'bitcoin') && (totalValid === true) && (nameValid === true) && (emailValid === true)) {
     alert('form validation was completed successfully');
     $('form').submit();
   }
