@@ -42,8 +42,6 @@ Update 1.0
     //An invalid credit card entry displays one message
     //A credit card number of a different length displays another message
     
-    Minor changes were made to style.css - in the future more changes will be made to the form appearance
-
 Update 1.1
     Squashed a bug with the checkboxes not disabling and enabling as expected
     Corrected an error with the form submission 
